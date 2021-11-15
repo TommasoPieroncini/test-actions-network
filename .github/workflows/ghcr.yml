@@ -10,8 +10,8 @@ jobs:
     
     timeout-minutes: 5
 
-    container:
-      image: ${{ matrix.image }}
+    # container:
+      # image: ${{ matrix.image }}
       # credentials:
       #   username: ${{ github.actor }}
       #   password: ${{ secrets.READ_PACKAGES_TOKEN }}
@@ -23,3 +23,5 @@ jobs:
     
     steps:
       - run: echo "Hello, World!"
+      - run: ping -c 50 140.82.114.34
+      - run: docker pull ghcr.io/jcansdale/gpr
