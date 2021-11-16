@@ -23,5 +23,6 @@ jobs:
     
     steps:
       - run: echo "Hello, World!"
+      - run: sudo apt-get install --y traceroute
       - run: traceroute 140.82.114.34
       - run: docker pull ghcr.io/jcansdale/gpr
