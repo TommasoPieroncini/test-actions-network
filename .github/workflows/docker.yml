@@ -16,5 +16,4 @@ jobs:
     steps:
       - run:
         |
-          ping -c 50 104.18.125.25
           docker pull diem/build_environment:main 
